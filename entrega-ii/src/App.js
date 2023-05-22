@@ -1,12 +1,18 @@
-
+import React from 'react';
 import './App.css';
-import LoginForm from './components/loginform';
-function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TicketPurchase from './components/buytickets';
+import TicketsPurchased from './components/viewtickets';
+
+const App = () => {
   return (
-    <div className="page">
-      <LoginForm/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TicketPurchase />} />
+        <Route path="/tickets-purchased" element={<TicketsPurchased />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

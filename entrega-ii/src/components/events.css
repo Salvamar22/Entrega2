@@ -1,0 +1,30 @@
+.evento-container {
+    width: 400px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .next-button:hover {
+    background-color: #0056
+  }
